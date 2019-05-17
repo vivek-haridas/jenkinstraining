@@ -1,0 +1,10 @@
+node {
+stage ('clone'){
+        git 'https://github.com/vivek-haridas/jenkinstraining.git'
+    
+}
+stage ('print'){
+        sh label: '', script: 'cat README.md'
+    
+}
+}
